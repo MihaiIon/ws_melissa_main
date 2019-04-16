@@ -16,3 +16,8 @@ $wrapper--padding: $unit * 4;
     padding: 0 rem($wrapper--padding);
   }
 }
+
+.o-section {
+  padding-top: rem($wrapper--tablet-padding);
+  padding-bottom: rem($wrapper--tablet-padding);
+}

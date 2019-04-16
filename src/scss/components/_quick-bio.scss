@@ -1,0 +1,29 @@
+// ======================================================
+// Components / Quick-bio
+// ======================================================
+
+.c-quick-bio {
+  background-color: darken($white, 8%);
+  & .o-layout_item:first-child {
+    position: relative;
+    padding-right: rem($unit / 2);
+  }
+}
+
+.c-quick-bio_profile,
+.c-quick-bio_profile_image {
+  width: rem($quick-bio--profile-image-width);
+  max-width: rem($quick-bio--profile-image-width);
+  height: rem($quick-bio--profile-image-height);
+}
+
+.c-quick-bio_profile {
+  margin: 0 auto;
+  background-color: $black;
+  border: solid rem($quick-bio--profile-border-width) $white;
+  box-shadow: 2px 2px 15px rgba($color: $black, $alpha: 0.7);
+}
+
+.c-quick-bio_profile_image {
+  display: block;
+}

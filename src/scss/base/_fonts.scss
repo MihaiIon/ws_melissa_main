@@ -2,35 +2,34 @@
 // Base / Fonts
 // ==========================================================================
 
-// @include font-face(
-//     $font-foobar,
-//     "fonts/Foobar/Regular"
-// ) {
-//     font-style:  normal;
-//     font-weight: 400;
-// }
+.o-p {
+  &:not(:first-child) {
+    margin-top: rem($unit * 0.45);
+  }
+  font-size: rem($font-size-p);
+  font-weight: $normal;
+}
 
-// @include font-face(
-//     $font-foobar,
-//     "fonts/Foobar/Medium"
-// ) {
-//     font-style:  normal;
-//     font-weight: 500;
-// }
+$link--margin-top: $unit;
+$link--padding: $unit;
+$link--font-size: 22px;
 
-// @include font-face(
-//     $font-foobar,
-//     "fonts/Foobar/Semibold"
-// ) {
-//     font-style:  normal;
-//     font-weight: 600;
-// }
+.o-link {
+  display: inline-block;
+  font-size: rem($link--font-size);
+  font-weight: $normal;
+  @media (min-width: $from-medium) {
+    font-weight: $light;
+  }
 
-// @include font-face(
-//     $font-bazqux,
-//     "fonts/Bazqux/Regular",
-//     ("eot", "woff2", "woff", "ttf")
-// ) {
-//     font-style:  normal;
-//     font-weight: 400;
-// }
+  margin-top: rem($link--margin-top);
+  padding: rem($link--padding / 4) rem($link--padding);
+
+  color: $white;
+  background-color: $main;
+  @include u-hocus {
+    color: $white;
+    background-color: $main-dark;
+  }
+  transition: background-color $speed / 2 $easing;
+}

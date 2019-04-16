@@ -4,9 +4,9 @@
 
 // Settings
 // ==========================================================================
+@import "settings/config";
 @import "settings/config.app";
 @import "settings/config.colors";
-@import "settings/config";
 
 // ==========================================================================
 // Tools
@@ -51,6 +51,7 @@
 // @import "components/component";
 @import "components/home-header";
 @import "components/navigation";
+@import "components/quick-bio";
 
 // Utilities
 // ==========================================================================

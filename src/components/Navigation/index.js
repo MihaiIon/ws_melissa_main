@@ -9,11 +9,11 @@ function Navigation() {
   // Set listeners
   useEffect(() => {
     const doc = document.documentElement;
-    window.onscroll = function onscroll() {
+    window.addEventListener("scroll", function onScroll() {
       const top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
-      if (top <= 150) setShrinkState(false);
+      if (top <= 60) setShrinkState(false);
       else setShrinkState(true);
-    };
+    });
   }, []);
 
   return (

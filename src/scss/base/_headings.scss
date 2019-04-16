@@ -3,8 +3,8 @@
 // ==========================================================================
 
 @mixin h {
-    margin-top: 0;
-    line-height: $line-height-h;
+  margin: 0;
+  line-height: $line-height-h;
 }
 
 //
@@ -15,7 +15,7 @@
 //
 //
 .o-h {
-    @include h;
+  @include h;
 }
 
 //
@@ -27,38 +27,21 @@
 //   <h2 class="o-h1"></h2>
 //
 //
-h1, .o-h1 {
-    @extend .o-h;
-
-    font-size: rem($font-size-h1);
+h1,
+.o-h1 {
+  @extend .o-h;
+  font-size: rem($font-size-h1);
 }
 
-h2, .o-h2 {
-    @extend .o-h;
-
-    font-size: rem($font-size-h2);
-}
-
-h3, .o-h3 {
-    @extend .o-h;
-
-    font-size: rem($font-size-h3);
-}
-
-h4, .o-h4 {
-    @extend .o-h;
-
-    font-size: rem($font-size-h4);
-}
-
-h5, .o-h5 {
-    @extend .o-h;
-
-    font-size: rem($font-size-h5);
-}
-
-h6, .o-h6 {
-    @extend .o-h;
-
-    font-size: rem($font-size-h6);
+h2,
+.o-h2 {
+  @extend .o-h;
+  font-size: rem($font-size-h2);
+  font-weight: $normal;
+  @media (min-width: $from-medium) {
+    font-weight: $light;
+  }
+  font-style: italic;
+  letter-spacing: rem(5px);
+  margin-bottom: rem($unit * 0.75);
 }

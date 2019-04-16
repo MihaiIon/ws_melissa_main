@@ -4,11 +4,13 @@ import PropTypes from "prop-types";
 //
 import Page from "../components/Page";
 import HomeHeader from "../components/HomeHeader";
+import QuickBio from "../components/QuickBio";
 
-function home(props) {
+function home() {
   return (
     <Page>
       <HomeHeader />
+      <QuickBio />
     </Page>
   );
 }

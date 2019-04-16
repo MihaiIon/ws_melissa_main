@@ -18,9 +18,9 @@ $navigation--link-font-size: 18px;
   background-color: transparent;
   &.-shrink {
     padding-top: 0;
-    background-color: rgba($color: lighten($black, 15%), $alpha: 0.95);
+    background-color: rgba($color: lighten($black, 10%), $alpha: 0.95);
   }
-  transition: $speed $easing;
+  transition: $speed ease-in-out;
 
   @include u-clearfix;
 }

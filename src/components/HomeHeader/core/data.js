@@ -46,10 +46,12 @@ export const SLIDES = [
       <HeartIcon
         style={{
           display: "inline-block",
-          color: "#ff7070",
+          color: "rgb(255, 65, 65)",
           position: "relative",
           left: "5px",
-          bottom: "3px"
+          bottom: "3px",
+          stroke: "white",
+          strokeWidth: "60px"
         }}
         color="current"
       />
