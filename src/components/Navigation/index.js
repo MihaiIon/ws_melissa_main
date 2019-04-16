@@ -1,7 +1,42 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import cn from "classnames-helper";
+import { Link } from "react-router-dom";
 
-function Navigation(props) {
-  return <nav className="c-nav" />;
+function Navigation() {
+  // State management
+  const [isShrinked, setShrinkState] = useState(false);
+
+  // Set listeners
+  useEffect(() => {
+    const doc = document.documentElement;
+    window.onscroll = function onscroll() {
+      const top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
+      if (top <= 150) setShrinkState(false);
+      else setShrinkState(true);
+    };
+  }, []);
+
+  return (
+    <nav className={cn("w-melissa-musique", "c-nav", "o-wrapper", ["-shrink", isShrinked])}>
+      <ul className="c-nav_list">
+        <li className="c-nav_item">
+          <Link className="c-nav_link" to="/">
+            Accueil
+          </Link>
+        </li>
+        <li className="c-nav_item">
+          <Link className="c-nav_link" to="/info">
+            Informations
+          </Link>
+        </li>
+        <li className="c-nav_item">
+          <Link className="c-nav_link -feature" to="todo">
+            Inscription
+          </Link>
+        </li>
+      </ul>
+    </nav>
+  );
 }
 
 export default Navigation;

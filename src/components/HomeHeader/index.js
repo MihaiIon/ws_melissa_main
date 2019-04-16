@@ -3,14 +3,14 @@ import { animated as a, useTransition } from "react-spring";
 
 // Components
 import Navigation from "../Navigation";
-import Slide from "./components/HeaderSlide";
-import HeaderSliderIndicators from "./components/HeaderSliderIndicators";
+import Slide from "./components/HomeHeaderSlide";
+import HomeHeaderSliderIndicators from "./components/HomeHeaderSliderIndicators";
 
 // Constants
 import { SLIDER_SPEED } from "../../constants/time";
 import { SLIDES } from "./core/data";
 
-function Header() {
+function HomeHeader() {
   const [slideIndex, setSlideIndex] = useState(0);
 
   // Transisions
@@ -26,18 +26,17 @@ function Header() {
   }, []);
 
   return (
-    <header className="w-melissa-musique c-header">
-      <Navigation />
-      <ul className="w-melissa-musique c-header_slider">
+    <header className="w-melissa-musique c-home-header">
+      <ul className="w-melissa-musique c-home-header_slider">
         {transitions.map(({ item, key, props }) => (
-          <a.li key={key} className="w-melissa-musique c-header_slider_item" style={props}>
+          <a.li key={key} className="w-melissa-musique c-home-header_slider_item" style={props}>
             <Slide title={item.title} description={item.description} imageUrl={item.url} />
           </a.li>
         ))}
       </ul>
-      <HeaderSliderIndicators slideIndex={slideIndex} setSlideIndex={setSlideIndex} />
+      <HomeHeaderSliderIndicators slideIndex={slideIndex} setSlideIndex={setSlideIndex} />
     </header>
   );
 }
 
-export default Header;
+export default HomeHeader;

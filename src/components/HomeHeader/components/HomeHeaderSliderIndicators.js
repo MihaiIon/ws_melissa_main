@@ -5,14 +5,14 @@ import cn from "classnames-helper";
 // Constants
 import { SLIDES } from "../core/data";
 
-function HeaderSliderIndicators({ slideIndex, setSlideIndex }) {
+function HomeHeaderSliderIndicators({ slideIndex, setSlideIndex }) {
   return (
-    <div className="w-melissa-musique c-header_slider_indicators">
+    <div className="w-melissa-musique c-home-header_slider_indicators">
       {SLIDES.map((_, index) => (
         <button
           type="button"
           onClick={() => setSlideIndex(index)}
-          className={cn("w-melissa-musique c-header_slider_indicator", [
+          className={cn("w-melissa-musique c-home-header_slider_indicator", [
             "-active",
             index === slideIndex
           ])}
@@ -22,9 +22,9 @@ function HeaderSliderIndicators({ slideIndex, setSlideIndex }) {
   );
 }
 
-HeaderSliderIndicators.propTypes = {
+HomeHeaderSliderIndicators.propTypes = {
   slideIndex: PropTypes.number.isRequired,
   setSlideIndex: PropTypes.func.isRequired
 };
 
-export default HeaderSliderIndicators;
+export default HomeHeaderSliderIndicators;

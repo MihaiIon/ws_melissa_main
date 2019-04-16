@@ -1,28 +1,15 @@
 // ======================================================
-// Components / Header
+// Components / Home Header
 // ======================================================
 
-$header--height: 650px;
-$header--mobile-height: 100vh;
-
-$header--slide-title-font-size: 48px;
-$header--slide-description-font-size: 26px;
-$header--slide-description-width: 600px;
-
-$header--slide-indicator-width: 40px;
-$header--slide-indicator-height: 5px;
-
-.c-header,
-.c-header_slider,
-.c-header_slider_item {
+.c-home-header,
+.c-home-header_slider,
+.c-home-header_slider_item {
   width: 100%;
-  height: $header--mobile-height;
-  @media (min-width: $from-small) {
-    height: rem($header--height);
-  }
+  height: 100vh;
 }
 
-.c-header {
+.c-home-header {
   position: relative;
   background-color: $black;
 }
@@ -30,57 +17,57 @@ $header--slide-indicator-height: 5px;
 // Slides
 // ======================================================
 
-.c-header_slider_item {
+.c-home-header_slider_item {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
 }
 
-.c-header_slide,
-.c-header_slide_content {
+.c-home-header_slide,
+.c-home-header_slide_content {
   height: 100%;
   width: 100%;
 }
 
-.c-header_slide {
+.c-home-header_slide {
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.c-header_slide_content {
+.c-home-header_slide_content {
   display: flex;
   justify-content: center;
   flex-direction: column;
   background-color: rgba($color: $black, $alpha: 0.65);
 }
 
-.c-header_slide_title {
+.c-home-header_slide_title {
   color: $white;
   font-size: rem($header--slide-title-font-size);
 }
 
-.c-header_slide_title_span-wrapper {
+.c-home-header_slide_title_span-wrapper {
   display: block;
   &:not(:last-child) {
     margin-bottom: rem($unit / 3);
   }
 }
 
-.c-header_slide_title_text {
+.c-home-header_slide_title_text {
   position: absolute;
   display: block;
   overflow: hidden;
 }
 
-.c-header_slide_description {
+.c-home-header_slide_description {
   width: rem($header--slide-description-width);
   color: rgba($color: $white, $alpha: 0.9);
   font-size: rem($header--slide-description-font-size);
   font-weight: $light;
 }
 
-.c-header_slider_indicators {
+.c-home-header_slider_indicators {
   z-index: 1;
   position: absolute;
   bottom: rem($unit);
@@ -89,7 +76,7 @@ $header--slide-indicator-height: 5px;
   text-align: center;
 }
 
-.c-header_slider_indicator {
+.c-home-header_slider_indicator {
   width: rem($header--slide-indicator-width);
   height: rem($header--slide-indicator-height);
 

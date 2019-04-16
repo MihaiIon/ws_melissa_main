@@ -11,7 +11,7 @@ import {
   SLIDE_HIDE_DELAY
 } from "../../../constants/time";
 
-function HeaderSlide({ title, description, imageUrl }) {
+function HomeHeaderSlide({ key, title, description, imageUrl }) {
   // Description
   const [isTitleVisible, setTitleVisibility] = useState(false);
   const [isDescriptionVisible, setDescriptionVisibility] = useState(false);
@@ -32,19 +32,20 @@ function HeaderSlide({ title, description, imageUrl }) {
 
   return (
     <div
-      className="w-melissa-musique c-header_slide"
+      key={key}
+      className="w-melissa-musique c-home-header_slide"
       style={{ backgroundImage: `url('${imageUrl}')` }}
     >
-      <div className="w-melissa-musique c-header_slide_content o-wrapper">
+      <div className="w-melissa-musique c-home-header_slide_content o-wrapper">
         <AnimatedTitle
           show={isTitleVisible}
           title={title}
           titleHeight={55}
-          className="w-melissa-musique c-header_slide"
+          className="w-melissa-musique c-home-header_slide"
         />
         <AnimatedDescription
           show={isDescriptionVisible}
-          className="w-melissa-musique c-header_slide"
+          className="w-melissa-musique c-home-header_slide"
           content={description}
         />
       </div>
@@ -52,11 +53,11 @@ function HeaderSlide({ title, description, imageUrl }) {
   );
 }
 
-HeaderSlide.propTypes = {
-  description: PropTypes.string.isRequired,
+HomeHeaderSlide.propTypes = {
   imageUrl: PropTypes.string.isRequired,
   key: PropTypes.string.isRequired,
+  description: PropTypes.node.isRequired,
   title: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired
 };
 
-export default HeaderSlide;
+export default HomeHeaderSlide;

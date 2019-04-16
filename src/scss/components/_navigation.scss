@@ -1,0 +1,75 @@
+// ======================================================
+// Components / Navigation
+// ======================================================
+
+$navigation--link-height: 70px;
+$navigation--link-padding: $unit / 2;
+$navigation--link-font-size: 18px;
+
+.c-nav {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: rem($navigation--link-height);
+  padding-top: rem($unit / 2);
+  background-color: transparent;
+  &.-shrink {
+    padding-top: 0;
+    background-color: rgba($color: lighten($black, 15%), $alpha: 0.95);
+  }
+  transition: $speed $easing;
+
+  @include u-clearfix;
+}
+
+.c-nav_list {
+  float: right;
+}
+
+.c-nav_item {
+  display: inline-block;
+  height: rem($navigation--link-height);
+  overflow: hidden;
+}
+
+.c-nav_link {
+  display: block;
+  height: rem($navigation--link-height);
+  line-height: rem($navigation--link-height);
+
+  padding: 0 rem($navigation--link-padding);
+
+  text-decoration: none;
+  font-weight: $light;
+  font-size: rem($navigation--link-font-size);
+
+  // Default
+  opacity: 0.5;
+  color: $white;
+  background-color: transparent;
+  @include u-hocus {
+    color: $white;
+    opacity: 1;
+    background-color: rgba($color: $black, $alpha: 0.25);
+  }
+  transition: $speed / 2 $easing;
+
+  // Feature
+  &.-feature {
+    height: rem($navigation--link-height * 0.95);
+    line-height: rem($navigation--link-height * 0.9);
+    font-weight: $normal;
+
+    margin-left: rem($unit / 3);
+    padding: 0 rem($navigation--link-padding * 1.35);
+
+    opacity: 1;
+    background-color: $feature;
+    @include u-hocus {
+      background-color: $feature-dark;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 // ======================================================
-// Components / Header / Core / Data
+// Components / HomeHeader / Core / Data
 // ======================================================
 
 import React, { Fragment } from "react";

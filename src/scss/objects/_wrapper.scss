@@ -7,6 +7,7 @@ $wrapper--tablet-padding: $unit * 2;
 $wrapper--padding: $unit * 4;
 
 .o-wrapper {
+  position: relative;
   padding: 0 rem($wrapper--phone-padding);
   @media (min-width: $from-small) {
     padding: 0 rem($wrapper--tablet-padding);

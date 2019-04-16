@@ -4,6 +4,7 @@
 
 // Settings
 // ==========================================================================
+@import "settings/config.app";
 @import "settings/config.colors";
 @import "settings/config";
 
@@ -48,7 +49,8 @@
 // Components
 // ==========================================================================
 // @import "components/component";
-@import "components/header";
+@import "components/home-header";
+@import "components/navigation";
 
 // Utilities
 // ==========================================================================
