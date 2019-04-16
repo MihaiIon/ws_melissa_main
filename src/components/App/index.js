@@ -1,10 +1,14 @@
 import React from "react";
-import PropTypes from "prop-types";
 
-function App(props) {
-  return <div className="c-app" />;
+// Components
+import Header from "../Header";
+
+function App() {
+  return (
+    <div className="c-app">
+      <Header />
+    </div>
+  );
 }
-
-App.propTypes = {};
 
 export default App;

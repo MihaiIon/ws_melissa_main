@@ -1,0 +1,17 @@
+// ======================================================
+// Objects / Wrapper
+// ======================================================
+
+$wrapper--phone-padding: $unit;
+$wrapper--tablet-padding: $unit * 2;
+$wrapper--padding: $unit * 4;
+
+.o-wrapper {
+  padding: 0 rem($wrapper--phone-padding);
+  @media (min-width: $from-small) {
+    padding: 0 rem($wrapper--tablet-padding);
+  }
+  @media (min-width: $from-large) {
+    padding: 0 rem($wrapper--padding);
+  }
+}
