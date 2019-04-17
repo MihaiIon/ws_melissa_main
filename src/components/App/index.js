@@ -5,7 +5,7 @@ import Routes from "../../routes";
 
 function App() {
   return (
-    <div className="c-app">
+    <div className="w-melissa-musique c-app">
       <Routes />
     </div>
   );

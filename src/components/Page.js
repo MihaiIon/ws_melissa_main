@@ -6,7 +6,7 @@ import Navigation from "./Navigation";
 
 function Page({ children }) {
   return (
-    <div className="c-page">
+    <div className="w-melissa-musique c-page">
       <Navigation />
       {children}
     </div>

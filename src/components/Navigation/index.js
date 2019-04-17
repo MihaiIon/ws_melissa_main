@@ -18,19 +18,19 @@ function Navigation() {
 
   return (
     <nav className={cn("w-melissa-musique", "c-nav", "o-wrapper", ["-shrink", isShrinked])}>
-      <ul className="c-nav_list">
-        <li className="c-nav_item">
-          <Link className="c-nav_link" to="/">
+      <ul className="w-melissa-musique c-nav_list">
+        <li className="w-melissa-musique c-nav_item">
+          <Link className="w-melissa-musique c-nav_link" to="/">
             Accueil
           </Link>
         </li>
-        <li className="c-nav_item">
-          <Link className="c-nav_link" to="/info">
+        <li className="w-melissa-musique c-nav_item">
+          <Link className="w-melissa-musique c-nav_link" to="/info">
             Informations
           </Link>
         </li>
-        <li className="c-nav_item">
-          <Link className="c-nav_link -feature" to="todo">
+        <li className="w-melissa-musique c-nav_item">
+          <Link className="w-melissa-musique c-nav_link -feature" to="todo">
             Inscription
           </Link>
         </li>
