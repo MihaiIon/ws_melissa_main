@@ -33,4 +33,5 @@ $link--font-size: 22px;
     background-color: $main-dark;
   }
   transition: background-color $speed / 2 $easing;
+  box-shadow: 3px 3px 3px rgba($color: $black, $alpha: 0.15);
 }

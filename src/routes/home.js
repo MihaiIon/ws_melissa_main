@@ -1,7 +1,6 @@
-import React, { useState, useContext } from "react";
-import PropTypes from "prop-types";
+import React from "react";
 
-//
+// Components
 import Page from "../components/Page";
 import HomeHeader from "../components/HomeHeader";
 import QuickBio from "../components/QuickBio";
@@ -16,7 +15,5 @@ function home() {
     </Page>
   );
 }
-
-home.propTypes = {};
 
 export default home;

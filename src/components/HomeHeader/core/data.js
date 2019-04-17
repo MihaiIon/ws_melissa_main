@@ -30,7 +30,7 @@ export const SLIDES = [
           display: "inline-block",
           color: "rgb(255, 65, 65)",
           position: "relative",
-          left: "5px",
+          left: "10px",
           bottom: "3px",
           stroke: "#b03434",
           strokeWidth: "120px"

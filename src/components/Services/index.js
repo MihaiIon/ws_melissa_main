@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import cn from "classnames-helper";
 
 // Components
@@ -9,14 +9,12 @@ import { ITEMS } from "./core/data";
 
 function Services() {
   const [hoveredSlideIndex, set] = useState(null);
-  const setSlideIndex = index => set(index);
-  console.log(hoveredSlideIndex);
   return (
     <section className="w-melissa-musique c-services">
       <div className="w-melissa-musique c-services_list" onMouseLeave={() => set(null)}>
         {ITEMS.map(({ title, description, url }, index) => (
           <div
-            key={title[0] + index}
+            key={title[0]}
             onFocus={() => set(index)}
             onMouseEnter={() => set(index)}
             className={cn("w-melissa-musique", "c-services_item", [

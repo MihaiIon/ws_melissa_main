@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { animated as a, useTransition } from "react-spring";
 
 // Components
-import Navigation from "../Navigation";
 import Slide from "./components/HomeHeaderSlide";
 import HomeHeaderSliderIndicators from "./components/HomeHeaderSliderIndicators";
 

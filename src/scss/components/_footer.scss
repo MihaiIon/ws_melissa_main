@@ -1,0 +1,50 @@
+// ======================================================
+// Components / Footer
+// ======================================================
+
+$footer--font-size: 18px;
+$footer--music-size: 50px;
+$footer--music-speed: $speed;
+$footer--music-rotation: 10deg;
+
+.c-footer {
+  padding: rem($unit) 0;
+  text-align: center;
+  background-color: lighten($black, 10%);
+}
+
+.c-footer_music {
+  width: rem($footer--music-size);
+  height: rem($footer--music-size);
+  color: lighten($black, 40%);
+  margin-bottom: rem($unit / 2);
+  &:hover {
+    color: darken($white, 30%);
+    animation: music-shake $footer--music-speed $easing infinite;
+  }
+  transition: color $speed / 2 $easing;
+}
+
+.c-footer_copyright {
+  margin: 0;
+  color: lighten($black, 25%);
+  font-size: rem($footer--font-size);
+}
+
+@keyframes music-shake {
+  0% {
+    transform: rotateZ(0);
+  }
+  25% {
+    transform: rotateZ(-$footer--music-rotation);
+  }
+  50% {
+    transform: rotateZ(0);
+  }
+  75% {
+    transform: rotateZ($footer--music-rotation);
+  }
+  100% {
+    transform: rotateZ(0);
+  }
+}

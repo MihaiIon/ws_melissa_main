@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { ANIMATED_DESCRIPTION_DELAY } from "../../../constants/time";
 
 // Components
-import { AnimatedTitle, AnimatedDescription } from "../../../components-ui";
+import { AnimatedTitle, AnimatedDescription } from "../../../components-anim";
 
 function ServicesSlide({ show, title, description, imageUrl }) {
   const [isDescriptionVisible, setDescriptionVisibility] = useState(false);
@@ -25,7 +25,7 @@ function ServicesSlide({ show, title, description, imageUrl }) {
               show={show}
               className="w-melissa-musique c-services_slide"
               title={title}
-              titleHeight={35}
+              titleHeight={38}
             />
             <AnimatedDescription
               show={isDescriptionVisible}

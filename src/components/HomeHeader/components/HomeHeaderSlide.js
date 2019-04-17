@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 // Components
-import { AnimatedTitle, AnimatedDescription } from "../../../components-ui";
+import { AnimatedTitle, AnimatedDescription } from "../../../components-anim";
 
 // Constants
 import {

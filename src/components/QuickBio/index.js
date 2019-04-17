@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import cn from "classnames-helper";
 import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
