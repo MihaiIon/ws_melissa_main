@@ -14,7 +14,7 @@ function HomeHeader() {
   const [slideIndex, setSlideIndex] = useState(0);
 
   // Transisions
-  const transitions = useTransition(SLIDES[slideIndex], item => item.description, {
+  const transitions = useTransition(SLIDES[slideIndex], item => item.title[0], {
     from: { opacity: 0 },
     enter: { opacity: 1 },
     leave: { opacity: 0 }

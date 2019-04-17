@@ -8,25 +8,7 @@ import React, { Fragment } from "react";
 import HeartIcon from "react-ionicons/lib/MdHeart";
 
 // Helper
-const createSlideHelper = (
-  title = [],
-  description = "MISSING_DESCRIPTION",
-  url = "MISSING_URL"
-) => {
-  // Format title array
-  let formatedTitle = ["MISSING_TITLE"];
-  if (typeof title === "string" || title instanceof String) {
-    formatedTitle = [title];
-  } else if (title instanceof Array && title.length > 0) {
-    formatedTitle = title;
-  }
-
-  return {
-    title: formatedTitle.map(t => t.toUpperCase()),
-    description,
-    url
-  };
-};
+import { createSlideHelper } from "../../../helpers";
 
 export const SLIDES = [
   createSlideHelper(
@@ -50,8 +32,8 @@ export const SLIDES = [
           position: "relative",
           left: "5px",
           bottom: "3px",
-          stroke: "white",
-          strokeWidth: "60px"
+          stroke: "#b03434",
+          strokeWidth: "120px"
         }}
         color="current"
       />

@@ -1,0 +1,81 @@
+// ======================================================
+// Components / Services
+// ======================================================
+
+$services--height: 450px;
+$services--slide-padding: $unit;
+$services--slide-title-font-size: 32px;
+$services--slide-description-font-size: 22px;
+$services--slide-description-width: 380px;
+
+.c-services,
+.c-services_list,
+.c-services_item {
+  width: 100%;
+  height: rem($services--height);
+}
+
+.c-services_list {
+  display: flex;
+}
+
+.c-services_item {
+  position: relative;
+  flex-grow: 1;
+  flex-basis: 0;
+  &.-active {
+    flex-grow: 2;
+  }
+  transition: $speed ease-in-out;
+}
+
+.c-services_slide-wrapper,
+.c-services_slide {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.c-services_slide {
+  background-color: rgba($color: $black, $alpha: 0.7);
+  .c-services_item.-active & {
+    background-color: rgba($color: $black, $alpha: 0.4);
+  }
+  transition: background-color $speed / 2 $easing;
+}
+
+.c-services_slide_content {
+  z-index: 1;
+  position: absolute;
+  bottom: rem($unit);
+  padding: 0 rem($services--slide-padding);
+}
+
+.c-services_slide_title {
+  color: $white;
+  font-size: rem($services--slide-title-font-size);
+}
+
+.c-services_slide_title_span-wrapper {
+  display: block;
+  &:not(:last-child) {
+    @media (min-width: $from-medium) {
+      margin-bottom: rem($unit / 4);
+    }
+  }
+}
+
+.c-services_slide_title_text {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+}
+
+.c-services_slide_description {
+  width: rem($services--slide-description-width);
+  color: rgba($color: $white, $alpha: 0.9);
+  font-size: rem($services--slide-description-font-size);
+  font-weight: $light;
+}

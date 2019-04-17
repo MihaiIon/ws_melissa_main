@@ -5,7 +5,7 @@ import Routes from "../../routes";
 
 function App() {
   return (
-    <div className="c-app" style={{ height: "2000px" }}>
+    <div className="c-app">
       <Routes />
     </div>
   );

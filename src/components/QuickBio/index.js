@@ -26,7 +26,7 @@ function QuickBio() {
           <Fade bottom>
             <div className={cn("w-melissa-musique", "c-quick-bio_profile")}>
               <img
-                src="./assets/melissa-bissonette.jpg"
+                src="./assets/melissa-bissonnette_cours-de-musique_piano.jpg"
                 alt="Mélissa Bissonnette | Professeure de piano et de violon"
                 className="w-melissa-musique c-quick-bio_profile_image"
               />

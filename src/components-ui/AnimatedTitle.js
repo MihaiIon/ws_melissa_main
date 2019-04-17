@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { animated as a, useTrail } from "react-spring";
 
 // Spring configuration
-const config = { mass: 5, tension: 2000, friction: 350 };
+const config = { mass: 5, tension: 2250, friction: 350 };
 
 function AnimatedTitle({ show, title, titleHeight, xOffset, className }) {
   // Animations
