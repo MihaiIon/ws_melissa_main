@@ -4,7 +4,7 @@
 
 $footer--font-size: 18px;
 $footer--music-size: 50px;
-$footer--music-speed: $speed;
+$footer--music-speed: $speed * 0.8;
 $footer--music-rotation: 10deg;
 
 .c-footer {
