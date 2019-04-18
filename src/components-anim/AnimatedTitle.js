@@ -18,7 +18,11 @@ function AnimatedTitle({ show, title, titleHeight, xOffset, className }) {
   return (
     <h1 className={`${className}_title`}>
       {trail.map(({ x, ...rest }, index) => (
-        <span className={`${className}_title_span-wrapper`} style={{ height: `${titleHeight}px` }}>
+        <span
+          key={`animated-title-${index}`}
+          className={`${className}_title_span-wrapper`}
+          style={{ height: `${titleHeight}px` }}
+        >
           <a.span
             className={`${className}_title_text`}
             style={{ ...rest, transform: x.interpolate(value => `translate3d(0,${value}px,0)`) }}

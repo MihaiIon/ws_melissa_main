@@ -13,7 +13,7 @@ function HomeHeader() {
   const [slideIndex, setSlideIndex] = useState(0);
 
   // Transisions
-  const transitions = useTransition(SLIDES[slideIndex], item => item.title[0], {
+  const transitions = useTransition(SLIDES[slideIndex], item => item.id, {
     from: { opacity: 0 },
     enter: { opacity: 1 },
     leave: { opacity: 0 }
@@ -29,7 +29,12 @@ function HomeHeader() {
       <ul className="w-melissa-musique c-home-header_slider">
         {transitions.map(({ item, key, props }) => (
           <a.li key={key} className="w-melissa-musique c-home-header_slider_item" style={props}>
-            <Slide title={item.title} description={item.description} imageUrl={item.url} />
+            <Slide
+              cKey={`${item.id}-slide`}
+              title={item.title}
+              description={item.description}
+              imageUrl={item.url}
+            />
           </a.li>
         ))}
       </ul>

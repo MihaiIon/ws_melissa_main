@@ -1,0 +1,37 @@
+// ======================================================
+// Components / Link
+// ======================================================
+
+.c-link {
+  display: inline-block;
+
+  margin-top: rem($link--margin-top);
+  padding: rem($link--padding / 4) rem($link--padding);
+
+  font-size: rem($link--font-size);
+  font-weight: $normal;
+  @media (min-width: $from-medium) {
+    font-weight: $light;
+  }
+
+  color: $white;
+  border-radius: 3px;
+  background-color: $main;
+  @include u-hocus {
+    color: $white;
+    background-color: $main-dark;
+  }
+
+  transition: background-color $speed / 2 $easing;
+  box-shadow: 3px 3px 3px rgba($color: $black, $alpha: 0.15);
+}
+
+.c-link.-disabled {
+  &,
+  &:hover,
+  &:focus {
+    cursor: default;
+    color: darken($white, 45%);
+    background-color: darken($white, 22%);
+  }
+}

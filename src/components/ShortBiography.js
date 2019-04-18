@@ -1,24 +1,26 @@
 import React from "react";
 import cn from "classnames-helper";
-import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 
-// Constants
-import DATA from "./core/data";
-
-const { title, subtitle, content } = DATA;
+// Components
+import Link from "./Link";
 
 function ShortBiography() {
   return (
     <section className="w-melissa-musique c-short-biography o-wrapper o-section">
       <div className="o-layout">
         <article className="o-layout_item u-1/2">
-          <h1 className="o-h1">{title}</h1>
-          <h2 className="o-h2">{subtitle}</h2>
-          {content.map(text => (
-            <p className="o-p">{text}</p>
-          ))}
-          <Link className="o-link" to="/info">
+          <h1 className="o-h1">Mélissa</h1>
+          <h2 className="o-h2">Professeure de piano</h2>
+          <p className="o-p">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
+          </p>
+          <p className="o-p">
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.
+          </p>
+          <Link to="/info" main>
             En savoir plus
           </Link>
         </article>

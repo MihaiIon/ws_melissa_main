@@ -3,9 +3,14 @@
 // ======================================================
 
 /**
- * 
+ *
  */
-export default (title = [], description = "MISSING_DESCRIPTION", url = "MISSING_URL") => {
+export default (
+  id = "MISSING_ID",
+  title = [],
+  description = "MISSING_DESCRIPTION",
+  url = "MISSING_URL"
+) => {
   // Format title array
   let formatedTitle = ["MISSING_TITLE"];
   if (typeof title === "string" || title instanceof String) {
@@ -15,6 +20,7 @@ export default (title = [], description = "MISSING_DESCRIPTION", url = "MISSING_
   }
 
   return {
+    id,
     title: formatedTitle.map(t => t.toUpperCase()),
     description,
     url

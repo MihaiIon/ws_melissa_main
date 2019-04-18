@@ -2,6 +2,12 @@
 // Settings / Config / App
 // ==========================================================================
 
+// Footer
+$footer--font-size: 18px;
+$footer--music-size: 50px;
+$footer--music-speed: $speed * 0.8;
+$footer--music-rotation: 10deg;
+
 // HomeHeader
 $header--slide-title-font-size: 48px;
 $header--slide-description-font-size: 26px;
@@ -10,7 +16,12 @@ $header--slide-description-width: 600px;
 $header--slide-indicator-width: 40px;
 $header--slide-indicator-height: 5px;
 
-// Quick Bio
+// Link
+$link--margin-top: $unit;
+$link--padding: $unit;
+$link--font-size: 22px;
+
+// Short Biography
 $short-biography--profile-border-width: 12px;
 $short-biography--profile-image-width: 360px;
 $short-biography--profile-image-height: 480px;

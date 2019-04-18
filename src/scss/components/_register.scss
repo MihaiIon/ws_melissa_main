@@ -1,0 +1,10 @@
+// ======================================================
+// Components / Register
+// ======================================================
+
+.c-register {
+  & .o-layout_item:last-child {
+    position: relative;
+    padding-right: rem($unit);
+  }
+}

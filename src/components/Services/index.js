@@ -12,9 +12,9 @@ function Services() {
   return (
     <section className="w-melissa-musique c-services">
       <div className="w-melissa-musique c-services_list" onMouseLeave={() => set(null)}>
-        {ITEMS.map(({ title, description, url }, index) => (
+        {ITEMS.map(({ id, title, description, url }, index) => (
           <div
-            key={title[0]}
+            key={id}
             onFocus={() => set(index)}
             onMouseEnter={() => set(index)}
             className={cn("w-melissa-musique", "c-services_item", [
@@ -23,6 +23,7 @@ function Services() {
             ])}
           >
             <ServicesSlide
+              id={id}
               show={index === hoveredSlideIndex}
               title={title}
               description={description}

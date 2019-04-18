@@ -6,7 +6,7 @@ import { ANIMATED_DESCRIPTION_DELAY } from "../../../constants/time";
 // Components
 import { AnimatedTitle, AnimatedDescription } from "../../../components-anim";
 
-function ServicesSlide({ show, title, description, imageUrl }) {
+function ServicesSlide({ id, show, title, description, imageUrl }) {
   const [isDescriptionVisible, setDescriptionVisibility] = useState(false);
   useEffect(() => {
     if (!isDescriptionVisible && show) {
@@ -15,6 +15,7 @@ function ServicesSlide({ show, title, description, imageUrl }) {
   });
   return (
     <div
+      key={id}
       className="w-melissa-musique c-services_slide-wrapper"
       style={{ backgroundImage: `url('${imageUrl}')` }}
     >

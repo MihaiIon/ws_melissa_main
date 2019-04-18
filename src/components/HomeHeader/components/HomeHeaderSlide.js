@@ -11,7 +11,7 @@ import {
   SLIDE_HIDE_DELAY
 } from "../../../constants/time";
 
-function HomeHeaderSlide({ key, title, description, imageUrl }) {
+function HomeHeaderSlide({ cKey, title, description, imageUrl }) {
   // Description
   const [isTitleVisible, setTitleVisibility] = useState(false);
   const [isDescriptionVisible, setDescriptionVisibility] = useState(false);
@@ -32,7 +32,7 @@ function HomeHeaderSlide({ key, title, description, imageUrl }) {
 
   return (
     <div
-      key={key}
+      key={cKey}
       className="w-melissa-musique c-home-header_slide"
       style={{ backgroundImage: `url('${imageUrl}')` }}
     >
@@ -55,7 +55,7 @@ function HomeHeaderSlide({ key, title, description, imageUrl }) {
 
 HomeHeaderSlide.propTypes = {
   imageUrl: PropTypes.string.isRequired,
-  key: PropTypes.string.isRequired,
+  cKey: PropTypes.string.isRequired,
   description: PropTypes.node.isRequired,
   title: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired
 };

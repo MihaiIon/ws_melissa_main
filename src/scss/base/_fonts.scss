@@ -8,30 +8,7 @@
   }
   font-size: rem($font-size-p);
   font-weight: $normal;
-}
-
-$link--margin-top: $unit;
-$link--padding: $unit;
-$link--font-size: 22px;
-
-.o-link {
-  display: inline-block;
-  font-size: rem($link--font-size);
-  font-weight: $normal;
-  @media (min-width: $from-medium) {
+  @media (min-width: $from-large) {
     font-weight: $light;
   }
-
-  margin-top: rem($link--margin-top);
-  padding: rem($link--padding / 4) rem($link--padding);
-  border-radius: 3px;
-
-  color: $white;
-  background-color: $main;
-  @include u-hocus {
-    color: $white;
-    background-color: $main-dark;
-  }
-  transition: background-color $speed / 2 $easing;
-  box-shadow: 3px 3px 3px rgba($color: $black, $alpha: 0.15);
 }
