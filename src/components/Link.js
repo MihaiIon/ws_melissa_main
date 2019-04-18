@@ -8,7 +8,9 @@ function Link({ children, to, main, feature, disabled }) {
     <RouterLink
       to={to}
       disabled={disabled}
-      onClick={e => e.preventDefault()}
+      onClick={e => {
+        if (disabled) e.preventDefault();
+      }}
       className={cn(
         "c-link",
         ["-main", !disabled && main],

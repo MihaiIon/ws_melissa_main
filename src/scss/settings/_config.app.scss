@@ -2,6 +2,15 @@
 // Settings / Config / App
 // ==========================================================================
 
+// Biography
+$biography-tease--profile-border-width: 12px;
+$biography-tease--profile-image-width: 360px;
+$biography-tease--profile-image-height: 480px;
+$biography-tease--profile-left: $unit * 2;
+$biography-tease--profile-translate: $unit * 2;
+
+$biography--header-height: 600px;
+
 // Footer
 $footer--font-size: 18px;
 $footer--music-size: 50px;
@@ -21,10 +30,14 @@ $link--margin-top: $unit;
 $link--padding: $unit;
 $link--font-size: 22px;
 
-// Short Biography
-$short-biography--profile-border-width: 12px;
-$short-biography--profile-image-width: 360px;
-$short-biography--profile-image-height: 480px;
+// Navigation
+$navigation--link-height: 70px;
+$navigation--link-padding: $unit / 2;
+$navigation--link-font-size: 18px;
 
-$short-biography--profile-left: $unit * 2;
-$short-biography--profile-translate: $unit * 2;
+// Services
+$services-tease--height: 450px;
+$services-tease--slide-padding: $unit;
+$services-tease--slide-title-font-size: 32px;
+$services-tease--slide-description-font-size: 22px;
+$services-tease--slide-description-width: 380px;

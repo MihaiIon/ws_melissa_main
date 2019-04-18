@@ -1,25 +1,19 @@
 // ======================================================
-// Components / Services
+// Components / ServicesTease
 // ======================================================
 
-$services--height: 450px;
-$services--slide-padding: $unit;
-$services--slide-title-font-size: 32px;
-$services--slide-description-font-size: 22px;
-$services--slide-description-width: 380px;
-
-.c-services,
-.c-services_list,
-.c-services_item {
+.c-services-tease,
+.c-services-tease_list,
+.c-services-tease_item {
   width: 100%;
-  height: rem($services--height);
+  height: rem($services-tease--height);
 }
 
-.c-services_list {
+.c-services-tease_list {
   display: flex;
 }
 
-.c-services_item {
+.c-services-tease_item {
   position: relative;
   flex-grow: 1;
   flex-basis: 0;
@@ -29,8 +23,8 @@ $services--slide-description-width: 380px;
   transition: $speed ease-in-out;
 }
 
-.c-services_slide-wrapper,
-.c-services_slide {
+.c-services-tease_slide-wrapper,
+.c-services-tease_slide {
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -38,27 +32,27 @@ $services--slide-description-width: 380px;
   background-position: center;
 }
 
-.c-services_slide {
+.c-services-tease_slide {
   background-color: rgba($color: $black, $alpha: 0.7);
-  .c-services_item.-active & {
+  .c-services-tease_item.-active & {
     background-color: rgba($color: $black, $alpha: 0.4);
   }
   transition: background-color $speed / 2 $easing;
 }
 
-.c-services_slide_content {
+.c-services-tease_slide_content {
   z-index: 1;
   position: absolute;
   bottom: rem($unit);
-  padding: 0 rem($services--slide-padding);
+  padding: 0 rem($services-tease--slide-padding);
 }
 
-.c-services_slide_title {
+.c-services-tease_slide_title {
   color: $white;
-  font-size: rem($services--slide-title-font-size);
+  font-size: rem($services-tease--slide-title-font-size);
 }
 
-.c-services_slide_title_span-wrapper {
+.c-services-tease_slide_title_span-wrapper {
   display: block;
   &:not(:last-child) {
     @media (min-width: $from-medium) {
@@ -67,15 +61,15 @@ $services--slide-description-width: 380px;
   }
 }
 
-.c-services_slide_title_text {
+.c-services-tease_slide_title_text {
   position: absolute;
   display: block;
   overflow: hidden;
 }
 
-.c-services_slide_description {
-  width: rem($services--slide-description-width);
+.c-services-tease_slide_description {
+  width: rem($services-tease--slide-description-width);
   color: rgba($color: $white, $alpha: 0.9);
-  font-size: rem($services--slide-description-font-size);
+  font-size: rem($services-tease--slide-description-font-size);
   font-weight: $light;
 }

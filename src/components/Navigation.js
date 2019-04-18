@@ -14,6 +14,7 @@ function Navigation() {
       if (top <= 60) setShrinkState(false);
       else setShrinkState(true);
     });
+    return () => window.removeEventListener("scroll");
   }, []);
 
   return (

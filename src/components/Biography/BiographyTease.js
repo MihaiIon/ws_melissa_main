@@ -3,11 +3,11 @@ import cn from "classnames-helper";
 import Fade from "react-reveal/Fade";
 
 // Components
-import Link from "./Link";
+import Link from "../Link";
 
-function ShortBiography() {
+function BiographyTease() {
   return (
-    <section className="w-melissa-musique c-short-biography o-wrapper o-section">
+    <section className="w-melissa-musique c-biography-tease o-wrapper o-section">
       <div className="o-layout">
         <article className="o-layout_item u-1/2">
           <h1 className="o-h1">Mélissa</h1>
@@ -26,11 +26,11 @@ function ShortBiography() {
         </article>
         <article className="o-layout_item u-1/2">
           <Fade bottom>
-            <div className={cn("w-melissa-musique", "c-short-biography_profile")}>
+            <div className={cn("w-melissa-musique", "c-biography-tease_profile")}>
               <img
                 src="./assets/melissa-bissonnette_cours-de-musique_piano.jpg"
                 alt="Mélissa Bissonnette | Professeure de piano et de violon"
-                className="w-melissa-musique c-short-biography_profile_image"
+                className="w-melissa-musique c-biography-tease_profile_image"
               />
             </div>
           </Fade>
@@ -40,4 +40,4 @@ function ShortBiography() {
   );
 }
 
-export default ShortBiography;
+export default BiographyTease;

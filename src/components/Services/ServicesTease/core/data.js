@@ -1,9 +1,9 @@
 // ======================================================
-// Components / Services / Core / Data
+// Components / ServicesTease / Core / Data
 // ======================================================
 
 // Helper
-import { createSlideHelper } from "../../../helpers";
+import { createSlideHelper } from "../../../../helpers";
 
 export const ITEMS = [
   createSlideHelper(

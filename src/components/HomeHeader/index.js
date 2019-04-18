@@ -21,7 +21,9 @@ function HomeHeader() {
   });
 
   // Set timings
-  useInterval(index => setSlideIndex((index + 1) % SLIDES.length), SLIDER_SPEED, slideIndex);
+  useInterval(() => {
+    setSlideIndex((slideIndex + 1) % SLIDES.length);
+  }, SLIDER_SPEED);
 
   return (
     <header className="w-melissa-musique c-home-header">
