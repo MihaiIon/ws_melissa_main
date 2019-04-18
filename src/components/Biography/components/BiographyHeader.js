@@ -9,7 +9,12 @@ import { SPEED } from "../../../constants/time";
 
 function BiographyHeader() {
   const [show, set] = useState(false);
-  useEffect(() => setTimeout(() => void set(!show), SPEED * 2), []);
+  useEffect(() => {
+    const t1 = setTimeout(() => void set(!show), SPEED * 2);
+    return () => {
+      clearTimeout(t1);
+    };
+  }, []);
   return (
     <header className="w-melissa-musique c-biography_header">
       <div className="w-melissa-musique c-biography_header_content">

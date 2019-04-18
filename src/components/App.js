@@ -1,12 +1,18 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
 
 // Components
 import Routes from "../routes";
+import Page from "./Page";
 
 function App() {
   return (
     <div className="w-melissa-musique c-app">
-      <Routes />
+      <BrowserRouter>
+        <Page>
+          <Routes />
+        </Page>
+      </BrowserRouter>
     </div>
   );
 }

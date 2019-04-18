@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import useInterval from "react-useinterval";
 import { animated as a, useTransition } from "react-spring";
 
 // Components
@@ -20,9 +21,7 @@ function HomeHeader() {
   });
 
   // Set timings
-  useEffect(() => {
-    void setInterval(() => setSlideIndex(index => (index + 1) % SLIDES.length), SLIDER_SPEED);
-  }, []);
+  useInterval(index => setSlideIndex((index + 1) % SLIDES.length), SLIDER_SPEED, slideIndex);
 
   return (
     <header className="w-melissa-musique c-home-header">

@@ -18,16 +18,21 @@ function HomeHeaderSlide({ cKey, title, description, imageUrl }) {
 
   //
   useEffect(() => {
-    void setTimeout(() => {
+    const t1 = setTimeout(() => {
       setTitleVisibility(true);
     }, SLIDE_SHOW_DELAY);
-    void setTimeout(() => {
+    const t2 = setTimeout(() => {
       setDescriptionVisibility(true);
     }, SLIDE_SHOW_DELAY + ANIMATED_DESCRIPTION_DELAY);
-    void setTimeout(() => {
+    const t3 = setTimeout(() => {
       setTitleVisibility(false);
       setDescriptionVisibility(false);
     }, SLIDE_HIDE_DELAY);
+    return () => {
+      clearTimeout(t1);
+      clearTimeout(t2);
+      clearTimeout(t3);
+    };
   }, []);
 
   return (

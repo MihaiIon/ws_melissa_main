@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Switch, BrowserRouter } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 // Import routes
 import home from "./home";
@@ -9,13 +9,11 @@ import error from "./error";
 class Routes extends Component {
   render() {
     return (
-      <BrowserRouter>
-        <Switch>
-          <Route exact path="/" component={home} />
-          <Route exact path="/info" component={info} />
-          <Route exact path="/:error" component={error} />
-        </Switch>
-      </BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={home} />
+        <Route exact path="/info" component={info} />
+        <Route exact path="/:error" component={error} />
+      </Switch>
     );
   }
 }
