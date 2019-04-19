@@ -30,6 +30,7 @@
     "react/jsx-tag-spacing": "off",
     "react/jsx-wrap-multilines": "off",
     "react/no-array-index-key": "off",
+    "react/no-unescaped-entities": "off",
     "import/no-absolute-path": "off",
     "react/jsx-one-expression-per-line": "off",
     "react/prop-types": ["warn"],

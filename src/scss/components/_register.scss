@@ -3,6 +3,8 @@
 // ======================================================
 
 .c-register {
+  color: $white;
+  background-color: #423045;
   & .o-layout_item:last-child {
     position: relative;
     padding-right: rem($unit);

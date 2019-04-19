@@ -1,0 +1,36 @@
+// ======================================================
+// Components / Services
+// ======================================================
+
+.c-services {
+}
+
+$services--article-padding: $unit;
+$services--article-height: 450px;
+
+.c-services_article {
+  padding-top: rem($services--article-padding);
+  padding-bottom: rem($services--article-padding);
+  &:nth-child(even) {
+    background-color: darken($white, 3%);
+  }
+}
+
+.c-services_subtitle {
+  margin-bottom: rem($unit / 5);
+}
+
+.c-services_article_view {
+  height: rem($services--article-height);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 0 $unit / 2;
+}
+
+.c-services_article_img {
+  width: 60%;
+  margin: 0 auto;
+}
