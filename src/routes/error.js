@@ -1,10 +1,10 @@
 import React from "react";
 
 // Components
-import Page from "../components/Page";
+import Error from "../components/Error";
 
 function info() {
-  return <Page />;
+  return <Error />;
 }
 
 export default info;

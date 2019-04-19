@@ -1,16 +1,22 @@
 import React from "react";
 
 // Components
-import Link from "./Link";
+import { Fade } from "react-reveal";
+import Link from "../Link";
+import RegisterAppPreview from "./components/RegisterAppPreview";
 
-function Register(props) {
+function Register() {
   return (
-    <section className="w-melissa-musique c-register o-wrapper o-section">
-      <div className="o-layout">
-        <div className="o-layout_item u-1/2" />
-        <div className="o-layout_item u-1/2">
-          <h1 className="o-h1">Rendez-vous</h1>
-          <h2 className="o-h2">Plateforme en ligne</h2>
+    <section id="register" className="w-melissa-musique c-register o-wrapper o-section">
+      <div className="w-melissa-musique o-layout -gutter">
+        <div className="w-melissa-musique o-layout_item u-1/2">
+          <Fade up>
+            <RegisterAppPreview />
+          </Fade>
+        </div>
+        <div className="w-melissa-musique o-layout_item u-1/2">
+          <h1 className="w-melissa-musique o-h1">Rendez-vous</h1>
+          <h2 className="w-melissa-musique o-h2">Plateforme en ligne</h2>
           <p className="w-melissa-musique o-p">
             Une plateforme en ligne sera bientôt disponible pour simplifier la prise de rendez-vous
           </p>

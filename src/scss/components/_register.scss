@@ -4,9 +4,53 @@
 
 .c-register {
   color: $white;
-  background-color: #423045;
+  background-color: #422847;
   & .o-layout_item:last-child {
     position: relative;
     padding-right: rem($unit);
   }
+}
+
+.c-register_app-preview_window {
+  max-width: rem($register--preview-width);
+  height: rem($register--preview-height);
+  overflow: hidden;
+
+  margin: rem($register--preview-margin-top) auto;
+  margin-bottom: 0;
+
+  border-radius: rem($register--preview-border-radius);
+  background-color: darken($white, 3%);
+  box-shadow: 2px 3px 25px rgba($color: $black, $alpha: 0.8);
+}
+
+.c-register_app-preview_header {
+  padding: rem($unit / 8) rem($unit / 4);
+  background-color: darken($white, 15%);
+}
+
+.c-register_app-preview_btn {
+  display: inline-block;
+  width: rem($register--preview-btn-size);
+  height: rem($register--preview-btn-size);
+
+  &:not(:first-child) {
+    margin-left: rem($unit / 8);
+  }
+
+  border-radius: 50%;
+  background-color: $white;
+  &.-red {
+    background-color: #ff7a97;
+  }
+  &.-yellow {
+    background-color: #fff46c;
+  }
+  &.-green {
+    background-color: #21c682;
+  }
+}
+
+.c-register_app-preview_body {
+  padding: rem($unit / 2);
 }

@@ -8,7 +8,7 @@ import Link from "../Link";
 function BiographyTease() {
   return (
     <section className="w-melissa-musique c-biography-tease o-wrapper o-section">
-      <div className="o-layout">
+      <div className="o-layout -gutter">
         <article className="o-layout_item u-1/2">
           <h1 className="o-h1">Mélissa</h1>
           <h2 className="o-h2">Professeure de piano</h2>
