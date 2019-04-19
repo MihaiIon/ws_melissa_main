@@ -12,7 +12,7 @@ function Services() {
         content={[
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         ]}
-        imageUrl="./assets/melissa-bissonnette_cours-de-piano_debutant-intermaidiare-avance.png"
+        imageUrl="./ws_melissa_main/assets//melissa-bissonnette_cours-de-piano_debutant-intermaidiare-avance.png"
         imageDescription="Mélissa Bissonnette | Cours de piano - Débutant à avancé"
       />
       <ServicesArticle
@@ -22,7 +22,7 @@ function Services() {
         content={[
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         ]}
-        imageUrl="./assets/melissa-bissonnette_cours-de-violon_debutant.png"
+        imageUrl="./ws_melissa_main/assets//melissa-bissonnette_cours-de-violon_debutant.png"
         imageDescription="Mélissa Bissonnette | Cours de piano - Débutant à avancé"
       />
       <ServicesArticle
@@ -31,7 +31,7 @@ function Services() {
         content={[
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         ]}
-        imageUrl="./assets/melissa-bissonnette_recitals.png"
+        imageUrl="./ws_melissa_main/assets//melissa-bissonnette_recitals.png"
         imageDescription="Mélissa Bissonnette | Cours de piano - Débutant à avancé"
       />
     </section>

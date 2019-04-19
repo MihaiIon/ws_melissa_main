@@ -15,13 +15,13 @@ export const SLIDES = [
     "home_slide_spectacle",
     ["Spectacle", "devant public"],
     "Participez chaque année au concert annuel de prestation des étudiants dans une salle de spectacle",
-    "./assets/melissa-bissonnette_concert-piano-et-violon.jpg"
+    "./ws_melissa_main/assets//melissa-bissonnette_concert-piano-et-violon.jpg"
   ),
   createSlideHelper(
     "home_slide_cours",
     ["Des cours adaptés", "à votre niveau"],
     "Des cours personnalisés en fonction de votre niveau et de vos objectifs musicaux",
-    "./assets/melissa-bissonnette_cours-debutant-a-avance.jpg"
+    "./ws_melissa_main/assets//melissa-bissonnette_cours-debutant-a-avance.jpg"
   ),
   createSlideHelper(
     "home_slide_cours-2",
@@ -41,6 +41,6 @@ export const SLIDES = [
         color="current"
       />
     </Fragment>,
-    "./assets/melissa-bissonnette_toute-la-famille.jpg"
+    "./ws_melissa_main/assets//melissa-bissonnette_toute-la-famille.jpg"
   )
 ];
