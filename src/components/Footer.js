@@ -1,15 +1,15 @@
 import React from "react";
 
 // Components
-import MusicIcon from "react-ionicons/lib/IosMusicalNotes";
+import { AnimatedMusicNote } from "../components-anim";
 
 function Footer() {
   return (
-    <footer className="c-footer">
-      <div className="c-footer_music">
-        <MusicIcon className="c-footer_music_icon" color="current" />
-      </div>
-      <p className="c-footer_copyright">Mélissa Bissonnette © 2019 | melissa@melmusique.com</p>
+    <footer className="w-melissa-musique c-footer">
+      <AnimatedMusicNote />
+      <p className="w-melissa-musique c-footer_copyright">
+        Mélissa Bissonnette © 2019 | melissa@melmusique.com
+      </p>
     </footer>
   );
 }

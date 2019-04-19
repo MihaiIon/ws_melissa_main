@@ -12,6 +12,7 @@ function Link({ children, to, main, feature, disabled }) {
         if (disabled) e.preventDefault();
       }}
       className={cn(
+        "w-melissa-musique",
         "c-link",
         ["-main", !disabled && main],
         ["-feature", !disabled && !main && feature],

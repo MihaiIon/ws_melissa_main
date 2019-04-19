@@ -1,0 +1,21 @@
+// ======================================================
+// Components / Error
+// ======================================================
+
+.c-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.c-error_title {
+  font-weight: $light;
+}
+
+.c-error_subtitle {
+  margin-bottom: 0;
+}

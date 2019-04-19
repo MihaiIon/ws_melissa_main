@@ -23,7 +23,7 @@
   }
 
   transition: background-color $speed / 2 $easing;
-  box-shadow: 3px 3px 3px rgba($color: $black, $alpha: 0.15);
+  box-shadow: 1px 1px 15px rgba($color: $black, $alpha: 0.15);
 }
 
 .c-link.-disabled {

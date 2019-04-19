@@ -4,7 +4,7 @@
 
 .c-register {
   color: $white;
-  background-color: #422847;
+  background-color: $main;
   & .o-layout_item:last-child {
     position: relative;
     padding-right: rem($unit);
