@@ -19,3 +19,9 @@
 .c-error_subtitle {
   margin-bottom: 0;
 }
+
+.c-error_404 {
+  font-weight: $light;
+  margin: rem($unit / 8);
+  color: darken($white, 30%);
+}

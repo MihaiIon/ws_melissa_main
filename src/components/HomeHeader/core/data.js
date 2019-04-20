@@ -4,24 +4,24 @@
 
 import React, { Fragment } from "react";
 
-// Helper
-import { createSlideHelper } from "../../../helpers";
-
 // Components
 import HeartIcon from "react-ionicons/lib/MdHeart";
+
+// Helper
+import { createSlideHelper } from "../../../helpers";
 
 export const SLIDES = [
   createSlideHelper(
     "home_slide_spectacle",
     ["Spectacle", "devant public"],
     "Participez chaque année au concert annuel de prestation des étudiants dans une salle de spectacle",
-    "./ws_melissa_main/assets//melissa-bissonnette_concert-piano-et-violon.jpg"
+    "./assets//melissa-bissonnette_concert-piano-et-violon.jpg"
   ),
   createSlideHelper(
     "home_slide_cours",
     ["Des cours adaptés", "à votre niveau"],
     "Des cours personnalisés en fonction de votre niveau et de vos objectifs musicaux",
-    "./ws_melissa_main/assets//melissa-bissonnette_cours-debutant-a-avance.jpg"
+    "./assets//melissa-bissonnette_cours-debutant-a-avance.jpg"
   ),
   createSlideHelper(
     "home_slide_cours-2",
@@ -41,6 +41,6 @@ export const SLIDES = [
         color="current"
       />
     </Fragment>,
-    "./ws_melissa_main/assets//melissa-bissonnette_toute-la-famille.jpg"
+    "./assets//melissa-bissonnette_toute-la-famille.jpg"
   )
 ];

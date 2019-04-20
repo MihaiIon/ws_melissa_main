@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 // Components
 import Biography from "../components/Biography";
@@ -9,6 +10,9 @@ import Services from "../components/Services";
 function info() {
   return (
     <Page>
+      <Helmet>
+        <title>Mélissa Bissonnette | Informations</title>
+      </Helmet>
       <Biography />
       <Services />
       <Register />

@@ -28,7 +28,7 @@ function BiographyTease() {
           <Fade bottom>
             <div className={cn("w-melissa-musique", "c-biography-tease_profile")}>
               <img
-                src="./ws_melissa_main/assets//melissa-bissonnette_cours-de-musique_piano.jpg"
+                src="./assets//melissa-bissonnette_cours-de-musique_piano.jpg"
                 alt="Mélissa Bissonnette | Professeure de piano et de violon"
                 className="w-melissa-musique c-biography-tease_profile_image"
               />
