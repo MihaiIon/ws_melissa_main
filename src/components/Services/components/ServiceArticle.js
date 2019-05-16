@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 // Components
 import { Fade } from "react-reveal";
 
-function ServicesArticle({ imageRight, imageUrl, imageDescription, title, subtitle, content }) {
+function ServiceArticle({ imageRight, imageUrl, imageDescription, title, subtitle, content }) {
   // Image component
   const Image = (
     <Fade up>
@@ -13,7 +13,6 @@ function ServicesArticle({ imageRight, imageUrl, imageDescription, title, subtit
         src={imageUrl}
         alt={imageDescription}
       />
-      ;
     </Fade>
   );
 
@@ -31,26 +30,28 @@ function ServicesArticle({ imageRight, imageUrl, imageDescription, title, subtit
   );
 
   return (
-    <article className="w-melissa-musique c-services_article o-layout o-wrapper">
-      <div className="o-layout_item u-1/2">
-        <div className="w-melissa-musique c-services_article_view">
-          {imageRight ? Description : Image}
+    <article className="w-melissa-musique c-services_article o-layout">
+      <div className="o-container">
+        <div className="o-layout_item u-1/2">
+          <div className="w-melissa-musique c-services_article_view">
+            {imageRight ? Description : Image}
+          </div>
         </div>
-      </div>
-      <div className="o-layout_item u-1/2">
-        <div className="w-melissa-musique c-services_article_view">
-          {imageRight ? Image : Description}
+        <div className="o-layout_item u-1/2">
+          <div className="w-melissa-musique c-services_article_view">
+            {imageRight ? Image : Description}
+          </div>
         </div>
       </div>
     </article>
   );
 }
 
-ServicesArticle.defaultProps = {
+ServiceArticle.defaultProps = {
   imageRight: false
 };
 
-ServicesArticle.propTypes = {
+ServiceArticle.propTypes = {
   imageRight: PropTypes.bool,
   imageUrl: PropTypes.string.isRequired,
   imageDescription: PropTypes.string.isRequired,
@@ -59,4 +60,4 @@ ServicesArticle.propTypes = {
   content: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired
 };
 
-export default ServicesArticle;
+export default ServiceArticle;

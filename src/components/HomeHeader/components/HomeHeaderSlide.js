@@ -41,18 +41,20 @@ function HomeHeaderSlide({ cKey, title, description, imageUrl }) {
       className="w-melissa-musique c-home-header_slide"
       style={{ backgroundImage: `url('${imageUrl}')` }}
     >
-      <div className="w-melissa-musique c-home-header_slide_content o-wrapper">
-        <AnimatedTitle
-          show={isTitleVisible}
-          title={title}
-          titleHeight={55}
-          className="w-melissa-musique c-home-header_slide"
-        />
-        <AnimatedDescription
-          show={isDescriptionVisible}
-          className="w-melissa-musique c-home-header_slide"
-          content={description}
-        />
+      <div className="w-melissa-musique c-home-header_slide_content">
+        <div className="o-container">
+          <AnimatedTitle
+            show={isTitleVisible}
+            title={title}
+            titleHeight={55}
+            className="w-melissa-musique c-home-header_slide"
+          />
+          <AnimatedDescription
+            show={isDescriptionVisible}
+            className="w-melissa-musique c-home-header_slide"
+            content={description}
+          />
+        </div>
       </div>
     </div>
   );

@@ -1,12 +1,12 @@
 import React from "react";
 
 // Components
-import ServicesArticle from "./components/ServicesArticle";
+import ServiceArticle from "./components/ServiceArticle";
 
 function Services() {
   return (
     <section className="w-melissa-musique c-services">
-      <ServicesArticle
+      <ServiceArticle
         title="Cours de Piano"
         subtitle="Débutant à avancé"
         content={[
@@ -15,7 +15,7 @@ function Services() {
         imageUrl="./assets//melissa-bissonnette_cours-de-piano_debutant-intermaidiare-avance.png"
         imageDescription="Mélissa Bissonnette | Cours de piano - Débutant à avancé"
       />
-      <ServicesArticle
+      <ServiceArticle
         imageRight
         title="Cours de Violon"
         subtitle="Débutant"
@@ -25,7 +25,7 @@ function Services() {
         imageUrl="./assets//melissa-bissonnette_cours-de-violon_debutant.png"
         imageDescription="Mélissa Bissonnette | Cours de piano - Débutant à avancé"
       />
-      <ServicesArticle
+      <ServiceArticle
         title="Récitals"
         subtitle="Un peu de stresse :)"
         content={[

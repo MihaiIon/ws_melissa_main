@@ -19,24 +19,26 @@ function Navigation() {
   }, []);
 
   return (
-    <nav className={cn("w-melissa-musique", "c-nav", "o-wrapper", ["-shrink", isShrinked])}>
-      <ul className="w-melissa-musique c-nav_list">
-        <li className="w-melissa-musique c-nav_item">
-          <Link className="w-melissa-musique c-nav_link" to="/">
-            Accueil
-          </Link>
-        </li>
-        <li className="w-melissa-musique c-nav_item">
-          <Link className="w-melissa-musique c-nav_link" to="/info">
-            Informations
-          </Link>
-        </li>
-        <li className="w-melissa-musique c-nav_item">
-          <a className="w-melissa-musique c-nav_link -feature" href="#register">
-            Inscription
-          </a>
-        </li>
-      </ul>
+    <nav className={cn("w-melissa-musique", "c-nav", ["-shrink", isShrinked])}>
+      <div className="o-container">
+        <ul className="w-melissa-musique c-nav_list">
+          <li className="w-melissa-musique c-nav_item">
+            <Link className="w-melissa-musique c-nav_link" to="/">
+              Accueil
+            </Link>
+          </li>
+          <li className="w-melissa-musique c-nav_item">
+            <Link className="w-melissa-musique c-nav_link" to="/info">
+              Informations
+            </Link>
+          </li>
+          <li className="w-melissa-musique c-nav_item">
+            <a className="w-melissa-musique c-nav_link -feature" href="#register">
+              Inscription
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 }
