@@ -30,7 +30,10 @@
 h1,
 .o-h1 {
   @extend .o-h;
-  font-size: rem($font-size-h1);
+  font-size: rem($font-size-h1 * 0.75);
+  @media (min-width: $from-large) {
+    font-size: rem($font-size-h1);
+  }
 }
 
 h2,

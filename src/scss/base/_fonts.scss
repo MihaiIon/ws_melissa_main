@@ -3,12 +3,13 @@
 // ==========================================================================
 
 .o-p {
+  margin: 0;
   &:not(:first-child) {
     margin-top: rem($unit * 0.45);
   }
   font-size: rem($font-size-p);
   font-weight: $normal;
-  @media (min-width: $from-large) {
+  @media (min-width: $from-medium) {
     font-weight: $light;
   }
 }

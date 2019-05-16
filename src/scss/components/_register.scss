@@ -5,15 +5,10 @@
 .c-register {
   color: $white;
   background-color: $main;
-  & .o-layout_item:last-child {
-    position: relative;
-    padding-right: rem($unit);
-  }
 }
 
 .c-register_app-preview_window {
   max-width: rem($register--preview-width);
-  height: rem($register--preview-height);
   overflow: hidden;
 
   margin: rem($register--preview-margin-top) auto;
@@ -52,5 +47,24 @@
 }
 
 .c-register_app-preview_body {
+  height: rem($register--preview-height);
   padding: rem($unit / 2);
+  & .o-layout,
+  & .o-layout_item {
+    height: 100%;
+  }
+}
+
+.c-register_app-preview_block {
+  &:not(:last-child) {
+    margin-bottom: 20%;
+  }
+  border-radius: 6px;
+  background-color: $gray;
+  &.-blue {
+    background-color: $block-blue;
+  }
+  &.-green {
+    background-color: $block-green;
+  }
 }
