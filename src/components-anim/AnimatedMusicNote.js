@@ -8,7 +8,10 @@ import MusicIcon from "react-ionicons/lib/IosMusicalNotes";
 function AnimatedMusicNote({ className, main }) {
   return (
     <div className={cn("w-melissa-musique", "c-animated-music-note", className, ["-main", main])}>
-      <MusicIcon className="w-melissa-musique c-animated-music-note_icon" color="current" />
+      <MusicIcon
+        className={cn("w-melissa-musique", "c-animated-music-note_icon", `${className}_icon`)}
+        color="current"
+      />
     </div>
   );
 }

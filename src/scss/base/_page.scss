@@ -15,7 +15,6 @@
 html {
   overflow-y: scroll; /* [2] */
   min-height: 100%; /* [3] */
-  min-width: 750px;
   color: $color;
   font-family: $font-family;
   line-height: $line-height; /* [1] */

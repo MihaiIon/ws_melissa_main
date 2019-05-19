@@ -2,6 +2,13 @@
 // Components / ServicesTease
 // ======================================================
 
+.c-services-tease {
+  display: none;
+  @media (min-width: $from-small) {
+    display: block;
+  }
+}
+
 .c-services-tease,
 .c-services-tease_list,
 .c-services-tease_item {
