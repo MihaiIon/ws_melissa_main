@@ -11,6 +11,10 @@
     width: 680px;
     padding: 0;
   }
+  @media (min-width: $from-medium) {
+    width: 860px;
+    padding: 0;
+  }
   @media (min-width: $from-large) {
     width: 960px;
   }

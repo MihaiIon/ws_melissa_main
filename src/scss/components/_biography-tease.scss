@@ -2,6 +2,15 @@
 // Components / Quick-bio
 // ======================================================
 
+.c-biography-tease {
+  @media (max-width: $to-small) {
+    text-align: center;
+    & .o-layout_item:first-child {
+      margin-bottom: rem($unit);
+    }
+  }
+}
+
 .c-biography-tease_profile,
 .c-biography-tease_profile_image {
   width: rem($biography-tease--profile-image-width);

@@ -5,6 +5,11 @@
 .c-register {
   color: $white;
   background-color: $main;
+  @media (max-width: $to-small) {
+    & .o-layout_item:first-child {
+      margin-bottom: rem($unit);
+    }
+  }
 }
 
 .c-register_app-preview_window {

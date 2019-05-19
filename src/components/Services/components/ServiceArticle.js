@@ -32,12 +32,12 @@ function ServiceArticle({ imageRight, imageUrl, imageDescription, title, subtitl
   return (
     <article className="w-melissa-musique c-services_article o-layout">
       <div className="o-container">
-        <div className="o-layout_item u-1/2">
+        <div className="o-layout_item u-1/2@from-small">
           <div className="w-melissa-musique c-services_article_view">
             {imageRight ? Description : Image}
           </div>
         </div>
-        <div className="o-layout_item u-1/2">
+        <div className="o-layout_item u-1/2@from-small">
           <div className="w-melissa-musique c-services_article_view">
             {imageRight ? Image : Description}
           </div>

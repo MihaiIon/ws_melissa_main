@@ -10,7 +10,7 @@ function BiographyTease() {
     <section className="w-melissa-musique c-biography-tease o-section">
       <div className="o-container">
         <div className="o-layout -gutter">
-          <article className="o-layout_item u-1/2">
+          <article className="o-layout_item u-1/2@from-small">
             <h1 className="o-h1">Mélissa</h1>
             <h2 className="o-h2">Professeure de piano</h2>
             <p className="o-p">
@@ -29,7 +29,7 @@ function BiographyTease() {
               En savoir plus
             </Link>
           </article>
-          <article className="o-layout_item u-1/2">
+          <article className="o-layout_item u-1/2@from-small">
             <Fade bottom>
               <div className={cn("w-melissa-musique", "c-biography-tease_profile")}>
                 <img

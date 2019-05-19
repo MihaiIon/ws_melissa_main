@@ -10,6 +10,12 @@
   padding-bottom: rem($services--article-padding);
   &:nth-child(even) {
     background-color: darken($white, 3%);
+    @media (max-width: $to-small) {
+      & > div {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
   }
 }
 
@@ -19,6 +25,9 @@
 
 .c-services_article_view {
   min-height: rem($services--article-height);
+  @media (max-width: $to-small) {
+    min-height: auto !important;
+  }
 
   display: flex;
   flex-direction: column;
@@ -28,6 +37,17 @@
 }
 
 .c-services_article_img {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
+  @media (max-width: $to-large) {
+    width: 90%;
+  }
+  @media (max-width: $to-small) {
+    width: 60%;
+    margin-bottom: rem($unit);
+  }
+  @media (max-width: $to-tiny) {
+    width: 70%;
+    margin-bottom: rem($unit);
+  }
 }

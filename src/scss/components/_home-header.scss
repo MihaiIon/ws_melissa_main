@@ -65,6 +65,9 @@
   color: rgba($color: $white, $alpha: 0.9);
   font-size: rem($header--slide-description-font-size);
   font-weight: $light;
+  @media (max-width: $to-small) {
+    width: 100% !important;
+  }
 }
 
 .c-home-header_slider_indicators {

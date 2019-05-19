@@ -4,6 +4,9 @@
 
 .c-footer {
   padding: rem($unit) 0;
+  @media (max-width: $to-small) {
+    padding: rem($unit / 1.5) rem($unit / 5);
+  }
   text-align: center;
   background-color: lighten($black, 10%);
 }

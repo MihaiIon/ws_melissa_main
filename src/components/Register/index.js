@@ -10,12 +10,12 @@ function Register() {
     <section id="register" className="w-melissa-musique c-register o-section">
       <div className="o-container">
         <div className="w-melissa-musique o-layout -gutter">
-          <div className="w-melissa-musique o-layout_item u-1/2">
+          <div className="w-melissa-musique o-layout_item u-1/2@from-small">
             <Fade up>
               <RegisterAppPreview />
             </Fade>
           </div>
-          <div className="w-melissa-musique o-layout_item u-1/2">
+          <div className="w-melissa-musique o-layout_item u-1/2@from-small">
             <h1 className="w-melissa-musique o-h1">Rendez-vous</h1>
             <h2 className="w-melissa-musique o-h2">Plateforme en ligne</h2>
             <p className="w-melissa-musique o-p">
