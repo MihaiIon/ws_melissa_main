@@ -5,7 +5,6 @@ import cn from "classnames-helper";
 // Components
 import Routes from "../routes";
 import Loading from "./Loading";
-import Navigation from "./Navigation";
 
 export const AppContext = React.createContext();
 
@@ -20,7 +19,6 @@ function App() {
     <div className={cn("w-melissa-musique", "c-app", ["-crop", isLoading])}>
       <AppContext.Provider value={ctx}>
         <BrowserRouter>
-          <Navigation />
           <Routes />
         </BrowserRouter>
         <Loading show={isLoading} />

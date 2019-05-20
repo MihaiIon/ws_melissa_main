@@ -10,8 +10,8 @@ function Services() {
         title="Cours de Piano"
         subtitle="Débutant à avancé"
         content={[
-          "Au file du temps, j'ai eu des étudiants agés entre 4 ans et (plus de) 100 ans!",
-          "Je couvre plusieurs styles de musique, dont: le classique, le jazz, la pop, le folklore, le metal et les musiques de films.",
+          "Au fil du temps, j'ai eu des étudiants âgés entre 4 ans et (plus de) 100 ans!",
+          "Je couvre plusieurs styles de musique, dont le classique, le jazz, la pop, le folklore, le metal et les musiques de films.",
           <Fragment>
             <b>1 heure</b> | 30$
             <br />
@@ -30,7 +30,7 @@ function Services() {
         title="Cours de Violon"
         subtitle="Débutant"
         content={[
-          "J'ai suivit 4 ans de cours de violon au privé. Je suis donc en mesure de vous initier à ce bel instrument tout en vous faisant découvrir le répertoire musical classique.",
+          "J'ai suivi 4 ans de cours de violon au privé. Je suis donc en mesure de vous initier à ce bel instrument tout en vous faisant découvrir le répertoire musical classique.",
           "Pour plus d'information, contactez-moi!",
           <Fragment>
             <b>1 heure</b> | 30$
@@ -47,7 +47,7 @@ function Services() {
       />
       <ServiceArticle
         title="Récitals"
-        subtitle="Un peu de stresse :)"
+        subtitle="Un peu de stress :)"
         content={[
           "Les récitals vous offrent de belles occasions pour jouer de la musique devant un public.",
           "Votre participation n'est en aucun cas obligatoire! Chaque année, une vingtaine d'étudiants manifestent leur intérêt à participer à ceux-ci.",

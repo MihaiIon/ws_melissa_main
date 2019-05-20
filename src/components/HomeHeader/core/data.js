@@ -27,7 +27,7 @@ export const SLIDES = [
     "home_slide_cours-2",
     ["Pour toute la famille"],
     <Fragment>
-      <span style={{ display: "inline-block" }}>Tout le monde à le droit d'apprendre!</span>
+      <span style={{ display: "inline-block" }}>Tout le monde a le droit d'apprendre!</span>
       <HeartIcon
         style={{
           display: "inline-block",

@@ -25,15 +25,17 @@
 
 .c-services_article_view {
   min-height: rem($services--article-height);
-  @media (max-width: $to-small) {
-    min-height: auto !important;
-  }
 
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   padding: 0 $unit / 2;
+
+  @media (max-width: $to-small) {
+    min-height: auto !important;
+    padding: 0;
+  }
 }
 
 .c-services_article_img {
