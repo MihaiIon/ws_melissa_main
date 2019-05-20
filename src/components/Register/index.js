@@ -5,7 +5,7 @@ import { Fade } from "react-reveal";
 import Link from "../Link";
 import RegisterAppPreview from "./components/RegisterAppPreview";
 
-function Register() {
+export default function Register() {
   return (
     <section id="register" className="w-melissa-musique c-register o-section">
       <div className="o-container">
@@ -27,7 +27,7 @@ function Register() {
               suivante:
             </p>
             <p className="w-melissa-musique o-p">
-              <b>melissa@melmusique.com</b>
+              <b>info@melinotes.ca</b>
             </p>
             <Link to="/todo" feature disabled>
               Bientôt disponible
@@ -38,5 +38,3 @@ function Register() {
     </section>
   );
 }
-
-export default Register;

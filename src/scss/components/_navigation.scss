@@ -98,6 +98,10 @@
 .c-nav_burger-toggle-btn {
   height: rem($navigation--link-height);
   float: right;
+  display: none;
+  @media (max-width: $to-small) {
+    display: block;
+  }
 }
 
 .c-nav_burger-toggle-btn_icon {

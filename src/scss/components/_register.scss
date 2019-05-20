@@ -6,6 +6,7 @@
   color: $white;
   background-color: $main;
   @media (max-width: $to-small) {
+    text-align: center;
     & .o-layout_item:first-child {
       margin-bottom: rem($unit);
     }
