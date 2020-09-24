@@ -8,7 +8,7 @@ function Footer() {
     <footer className="w-melissa-musique c-footer">
       <AnimatedMusicNote />
       <p className="w-melissa-musique c-footer_copyright">
-        Mélissa Bissonnette © 2019 | info@melinotes.ca
+        Mélissa Bissonnette © 2019 | melinotes@hotmail.com
       </p>
     </footer>
   );

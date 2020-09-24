@@ -19,15 +19,15 @@ export default function Register() {
             <h1 className="w-melissa-musique o-h1">Rendez-vous</h1>
             <h2 className="w-melissa-musique o-h2">Plateforme en ligne</h2>
             <p className="w-melissa-musique o-p">
-              Une plateforme en ligne sera bientôt disponible pour simplifier la prise de
-              rendez-vous
+              Une plateforme en ligne sera éventuellement disponible pour simplifier la prise de
+              rendez-vous.
             </p>
             <p className="w-melissa-musique o-p">
               En attendant, vous pouvez communiquer avec moi à l'aide de l'adresse courriel
               suivante:
             </p>
             <p className="w-melissa-musique o-p">
-              <b>info@melinotes.ca</b>
+              <b>melinotes@hotmail.com</b>
             </p>
             <Link to="/todo" feature disabled>
               Bientôt disponible
