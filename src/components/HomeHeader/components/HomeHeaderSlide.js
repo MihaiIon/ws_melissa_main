@@ -35,6 +35,18 @@ function HomeHeaderSlide({ cKey, title, description, imageUrl }) {
     };
   }, []);
 
+  function computeTitleHeight() {
+    const win = window;
+    const doc = window.document.documentElement;
+    const { body } = window;
+    const width = win.innerWidth || doc.clientWidth || body.clientWidth;
+
+    if (width < 1599) return 55;
+    if (width < 2000) return 62;
+    if (width < 2400) return 72;
+    return 80;
+  }
+
   return (
     <div
       key={cKey}
@@ -46,7 +58,7 @@ function HomeHeaderSlide({ cKey, title, description, imageUrl }) {
           <AnimatedTitle
             show={isTitleVisible}
             title={title}
-            titleHeight={55}
+            titleHeight={computeTitleHeight()}
             className="w-melissa-musique c-home-header_slide"
           />
           <AnimatedDescription

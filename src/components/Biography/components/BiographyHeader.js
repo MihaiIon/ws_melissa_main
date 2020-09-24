@@ -36,6 +36,19 @@ function BiographyHeader() {
     };
   }, []);
 
+  function computeTitleHeight() {
+    const win = window;
+    const doc = window.document.documentElement;
+    const { body } = window;
+    const width = win.innerWidth || doc.clientWidth || body.clientWidth;
+
+    if (width < 1200) return 45;
+    if (width < 1600) return 68;
+    if (width < 2000) return 78;
+    if (width < 2400) return 88;
+    return 100;
+  }
+
   return (
     <header className="w-melissa-musique c-biography_header">
       <div
@@ -49,7 +62,7 @@ function BiographyHeader() {
             show
             className="w-melissa-musique c-biography_header"
             title={["Mélissa", "Bissonnette"]}
-            titleHeight={65}
+            titleHeight={computeTitleHeight()}
           />
           <Fade left cascade when={isSubTitleVisible}>
             <p className="w-melissa-musique c-biography_header_description">
