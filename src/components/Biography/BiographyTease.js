@@ -5,6 +5,8 @@ import Fade from "react-reveal/Fade";
 // Components
 import Link from "../Link";
 
+const getProfessionYears = () => new Date().getFullYear() - 2012;
+
 function BiographyTease() {
   return (
     <section className="w-melissa-musique c-biography-tease o-section">
@@ -14,7 +16,8 @@ function BiographyTease() {
             <h1 className="o-h1">Mélissa</h1>
             <h2 className="o-h2">Professeure de piano</h2>
             <p className="o-p">
-              Bonjour, je suis professeure de piano depuis plus de 7 ans et j'adore mon métier :)
+              Bonjour, je suis professeure de piano depuis plus de {getProfessionYears()} ans et
+              j'adore mon métier :)
             </p>
             <p className="o-p">
               Si vous souhaitez stimuler votre concentration ou simplement apprendre la musique en
