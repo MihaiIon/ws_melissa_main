@@ -5,7 +5,7 @@
 export const SPEED = 300;
 
 // Slider
-export const SLIDER_SPEED = 10000;
+export const SLIDER_SPEED = 16000;
 export const SLIDE_SHOW_DELAY = SPEED * 2;
 export const SLIDE_HIDE_DELAY = SLIDER_SPEED - SPEED * 2;
 

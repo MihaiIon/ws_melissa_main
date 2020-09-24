@@ -32,7 +32,7 @@ function NavigationBurgerPanel({ isBurgerNavigationOpen, setBurgerNavigationStat
 }
 
 NavigationBurgerPanel.propTypes = {
-  isBurgerNavigationOpen: PropTypes.number.isRequired,
+  isBurgerNavigationOpen: PropTypes.bool.isRequired,
   setBurgerNavigationState: PropTypes.func.isRequired
 };
 
