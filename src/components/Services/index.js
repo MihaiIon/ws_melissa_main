@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 
 // Components
 import ServiceArticle from "./components/ServiceArticle";
+import ServiceCovidWarning from "./components/ServiceCovidWarning";
 
 function Services() {
   return (
@@ -10,15 +11,15 @@ function Services() {
         title="Cours de Piano"
         subtitle="Débutant à avancé"
         content={[
-          "Au fil du temps, j'ai eu des étudiants âgés entre 4 ans et (plus de) 100 ans!",
+          "Au fil du temps, j'ai eu des étudiants âgés entre 4 ans et 80 ans!",
           "Je couvre plusieurs styles de musique, dont le classique, le jazz, la pop, le folklore, le metal et les musiques de films.",
           <Fragment>
-            <b>1 heure</b> | 30$
+            <b>1 heure</b> | 35$
             <br />
             <b>30 minutes</b> | 20$
             <br />
             <span style={{ fontSize: 13 }}>
-              <em>*</em> Tous les cours sont offerts à mon domicile, donc je ne me déplace pas.
+              <em>*</em> Tous les cours sont offerts à mon domicile et/ou en ligne.
             </span>
           </Fragment>
         ]}
@@ -33,12 +34,12 @@ function Services() {
           "J'ai suivi 4 ans de cours de violon au privé. Je suis donc en mesure de vous initier à ce bel instrument tout en vous faisant découvrir le répertoire musical classique.",
           "Pour plus d'information, contactez-moi!",
           <Fragment>
-            <b>1 heure</b> | 30$
+            <b>1 heure</b> | 35$
             <br />
             <b>30 minutes</b> | 20$
             <br />
             <span style={{ fontSize: 13 }}>
-              <em>*</em> Tous les cours sont offerts à mon domicile, donc je ne me déplace pas.
+              <em>*</em> Tous les cours sont offerts à mon domicile et/ou en ligne.
             </span>
           </Fragment>
         ]}
@@ -57,6 +58,7 @@ function Services() {
             <span style={{ fontSize: 13 }}>
               <em>*</em> Gratuit pour les enfants de moins de 12 ans.
             </span>
+            <ServiceCovidWarning />
           </Fragment>
         ]}
         imageUrl="./assets//melissa-bissonnette_recitals.png"

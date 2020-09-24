@@ -53,3 +53,49 @@
     margin-bottom: rem($unit);
   }
 }
+
+// COVID-ONLY
+// ============================================
+
+$covid-color: rgb(255, 226, 145);
+$covid-color-dark: darken($covid-color, 50%);
+$covid-padding: $unit/3;
+
+$covid-icon-holder-width: 70px;
+$covid-icon-size: 38px;
+$covid-text-size: 16px;
+
+.c-services_covid-warning {
+  position: relative;
+
+  margin-top: rem($unit/3);
+
+  border-radius: 10px;
+  background-color: $covid-color;
+}
+
+.c-services_covid-warning_icon-holder,
+.c-services_covid-warning_text-holder {
+  padding: rem($covid-padding) 0;
+  color: $covid-color-dark;
+  font-weight: 300;
+}
+
+.c-services_covid-warning_icon-holder {
+  position: absolute;
+
+  height: 100%;
+  width: rem($covid-icon-holder-width);
+
+  text-align: center;
+}
+
+.c-services_covid-warning_icon {
+  width: rem($covid-icon-size);
+}
+
+.c-services_covid-warning_text-holder {
+  margin-left: rem($covid-icon-holder-width);
+  padding-right: rem($covid-padding);
+  font-size: rem($covid-text-size);
+}
