@@ -5,55 +5,6 @@
 .c-services {
 }
 
-.c-services_article {
-  padding-top: rem($services--article-padding);
-  padding-bottom: rem($services--article-padding);
-  &:nth-child(even) {
-    background-color: darken($white, 3%);
-    @media (max-width: $to-small) {
-      & > div {
-        display: flex;
-        flex-direction: column-reverse;
-      }
-    }
-  }
-}
-
-.c-services_subtitle {
-  margin-bottom: rem($unit / 5);
-}
-
-.c-services_article_view {
-  min-height: rem($services--article-height);
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  padding: 0 $unit / 2;
-
-  @media (max-width: $to-small) {
-    min-height: auto !important;
-    padding: 0;
-  }
-}
-
-.c-services_article_img {
-  width: 70%;
-  margin: 0 auto;
-  @media (max-width: $to-large) {
-    width: 90%;
-  }
-  @media (max-width: $to-small) {
-    width: 60%;
-    margin-bottom: rem($unit);
-  }
-  @media (max-width: $to-tiny) {
-    width: 70%;
-    margin-bottom: rem($unit);
-  }
-}
-
 // COVID-ONLY
 // ============================================
 
@@ -77,8 +28,12 @@ $covid-text-size: 16px;
 .c-services_covid-warning_icon-holder,
 .c-services_covid-warning_text-holder {
   padding: rem($covid-padding) 0;
-  color: $covid-color-dark;
   font-weight: 300;
+  
+  &,
+  b {
+    color: $covid-color-dark !important;
+  }
 }
 
 .c-services_covid-warning_icon-holder {

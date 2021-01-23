@@ -19,21 +19,22 @@
 // ======================================================
 
 .c-nav {
+  @include u-clearfix;
+
   z-index: 10;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
 
-  height: rem($navigation--link-height);
-  padding-top: rem($unit / 2);
+  padding-top: rem($unit / 3);
   background-color: transparent;
   &.-shrink {
     padding-top: 0;
-    background-color: $navigation;
+    background-color: rgba($color: $main-darker, $alpha: 0.98);
   }
+
   transition: $speed ease-in-out;
-  @include u-clearfix;
 
   & .c-nav_list {
     display: none;
@@ -45,6 +46,8 @@
 
 .c-nav_list {
   float: right;
+  height: rem($navigation--link-height - 3px);
+  overflow: hidden;
 }
 
 .c-nav_item {
@@ -74,22 +77,6 @@
     background-color: rgba($color: $black, $alpha: 0.25);
   }
   transition: $speed / 2 $easing;
-
-  // Feature
-  &.-feature {
-    height: rem($navigation--link-height * 0.95);
-    line-height: rem($navigation--link-height * 0.9);
-    font-weight: $normal;
-
-    margin-left: rem($unit / 3);
-    padding: 0 rem($navigation--link-padding * 1.35);
-
-    opacity: 1;
-    background-color: $feature;
-    @include u-hocus {
-      background-color: $feature-dark;
-    }
-  }
 }
 
 // Buger Toggle Button

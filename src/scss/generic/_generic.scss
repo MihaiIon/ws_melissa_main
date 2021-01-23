@@ -35,6 +35,9 @@ i {
 b,
 strong {
     font-weight: $bold;
+    color: #505050;
+    &.-white { color: white; }
+    &.-zoom  { color: $zoom-color !important; }
 }
 
 a {

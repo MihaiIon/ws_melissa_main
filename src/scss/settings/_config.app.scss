@@ -2,6 +2,10 @@
 // Settings / Config / App
 // ==========================================================================
 
+// Article
+$article--padding: $unit * 1.5;
+$article--height: 400px;
+
 // Biography
 $biography-tease--profile-border-width: 12px;
 $biography-tease--profile-image-width: 360px;
@@ -31,7 +35,7 @@ $link--padding: $unit;
 $link--font-size: 22px;
 
 // Navigation
-$navigation--link-height: 70px;
+$navigation--link-height: 65px;
 $navigation--link-padding: $unit / 2;
 $navigation--link-font-size: 18px;
 $navigation--burger-btn-size: 45px;
@@ -51,5 +55,3 @@ $services-tease--slide-title-font-size: 32px;
 $services-tease--slide-description-font-size: 22px;
 $services-tease--slide-description-width: 380px;
 
-$services--article-padding: $unit;
-$services--article-height: 550px;

@@ -11,8 +11,9 @@ $gray: #e9e9e9;
 
 $main: #5a3562;
 $main-dark: darken($main, 8%);
+$main-darker: #230d27;
 
-$feature: rgb(255, 153, 0);
+$feature: rgb(223, 137, 8);
 $feature-dark: darken($feature, 15%);
 
 $navigation: rgba(
@@ -28,9 +29,9 @@ $block-blue: rgb(76, 181, 207);
 $block-green: rgb(46, 228, 182);
 
 // Link
-$link-color: #1a0dab;
-$link-focus-color: #1a0dab;
-$link-hover-color: darken(#1a0dab, 10%);
+$link-color: #e66dff;
+$link-focus-color: $link-color;
+$link-hover-color: darken($link-color, 10%);
 
 // Selection
 $selection-text-color: #3297fd;
@@ -38,7 +39,4 @@ $selection-background-color: #ffffff;
 
 // Social Colors
 // =============================================================================
-$facebook-color: #3b5998;
-$instagram-color: #e1306c;
-$youtube-color: #cd201f;
-$twitter-color: #1da1f2;
+$zoom-color: #2e8cff;

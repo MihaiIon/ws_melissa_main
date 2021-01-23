@@ -12,6 +12,10 @@
 .c-home-header {
   position: relative;
   background-color: $black;
+
+  b {
+    color: white; 
+  }
 }
 
 // Slides
@@ -33,6 +37,7 @@
 .c-home-header_slide {
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .c-home-header_slide_content {

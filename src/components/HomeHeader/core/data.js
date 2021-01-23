@@ -3,11 +3,8 @@
 // ======================================================
 
 import React, { Fragment } from "react";
-
-// Components
 import HeartIcon from "react-ionicons/lib/MdHeart";
 
-// Helper
 import { createSlideHelper } from "../../../helpers";
 
 export const SLIDES = [
@@ -19,7 +16,7 @@ export const SLIDES = [
       votre domicile!
       <br />
       <br />
-      Les cours privés sont maintenant disponibles par l'entremise de <b>Zoom</b> ou <b>Skype</b>.
+      Les cours privés sont maintenant disponibles par l'entremise de <b className="-zoom">Zoom</b>.
     </Fragment>,
     "./assets//melissa-bissonnette_concert-piano-et-violon.jpg"
   ),

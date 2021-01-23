@@ -13,3 +13,12 @@
     font-weight: $light;
   }
 }
+
+.o-a {
+  font-weight: $medium;
+  text-decoration: underline;
+
+  &.-zoom {
+    color: $zoom-color;
+  }
+}

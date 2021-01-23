@@ -1,8 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import cn from "classnames-helper";
+
 import { Link } from "react-router-dom";
 import { animated as a, Trail } from "react-spring/renderprops";
+
+import { formatClassNames as fcn } from "../../../helpers";
 
 const navItems = [
   {
@@ -14,37 +16,23 @@ const navItems = [
     to: "/info"
   },
   {
-    text: "Inscription",
-    href: "#register",
-    feature: true
+    text: "Contact",
+    href: "#register"
   }
 ];
 
 export default function NavigationItems({ onItemClick }) {
   return (
-    <ul className="w-melissa-musique c-nav_list">
-      <Trail
-        items={navItems}
-        keys={item => `nav--${item.text}`}
-        from={{ opacity: 0 }}
-        to={{ opacity: 1 }}
-      >
+    <ul className={fcn("c-nav_list")}>
+      <Trail items={navItems} keys={item => `nav--${item.text}`} from={{ opacity: 0 }} to={{ opacity: 1 }}>
         {item => props => (
-          <a.li style={props} className="w-melissa-musique c-nav_item">
+          <a.li style={props} className={fcn("c-nav_item")}>
             {item.to ? (
-              <Link
-                className="w-melissa-musique c-nav_link"
-                to={item.to}
-                onClick={() => onItemClick()}
-              >
+              <Link className={fcn("c-nav_link")} to={item.to} onClick={() => onItemClick()}>
                 {item.text}
               </Link>
             ) : (
-              <a
-                className={cn("w-melissa-musique c-nav_link", ["-feature", item.feature])}
-                href={item.href}
-                onClick={() => onItemClick()}
-              >
+              <a className={fcn("c-nav_link")} href={item.href} onClick={() => onItemClick()}>
                 {item.text}
               </a>
             )}

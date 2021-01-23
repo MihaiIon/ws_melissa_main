@@ -1,0 +1,77 @@
+// ======================================================
+// Components / Article
+// ======================================================
+
+.c-article {}
+
+.c-article {
+  padding-top: rem($article--padding);
+  padding-bottom: rem($article--padding);
+  &:nth-child(even) {
+    background-color: darken($white, 3%);
+    @media (max-width: $to-small) {      
+      & > div {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+  }
+
+  &.-feature {
+    background-color: $feature;
+    color: $white;
+
+    b {
+      color: $white;
+    }
+  }
+}
+
+.c-article-description_title.-zoom {
+  color: $zoom-color;
+}
+
+.c-article-description_subtitle {
+  margin-bottom: rem($unit / 5);
+}
+
+.c-article-description_wrapper,
+.c-article-image_wrapper {
+  min-height: rem($article--height);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 0 $unit / 2;
+
+  @media (max-width: $to-small) {
+    min-height: auto !important;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.c-article-image_img {
+  margin: 0 auto;
+
+  width: 70%;
+  &.-large {
+    width: 90%;
+  }
+
+  @media (max-width: $to-large) {
+    width: 90%;
+    &.-large {
+      width: 90%;
+    }
+  }
+  @media (max-width: $to-small) {
+    width: 60%;
+    margin-bottom: rem($unit);
+  }
+  @media (max-width: $to-tiny) {
+    width: 70%;
+    margin-bottom: rem($unit);
+  }
+}

@@ -18,16 +18,12 @@ export default function Register() {
           <div className="w-melissa-musique o-layout_item u-1/2@from-small">
             <h1 className="w-melissa-musique o-h1">Rendez-vous</h1>
             <h2 className="w-melissa-musique o-h2">Plateforme en ligne</h2>
+            <p className="w-melissa-musique o-p">Une plateforme en ligne sera éventuellement disponible pour simplifier la prise de rendez-vous.</p>
+            <p className="w-melissa-musique o-p">En attendant, vous pouvez communiquer avec moi à l'aide de l'adresse courriel suivante:</p>
             <p className="w-melissa-musique o-p">
-              Une plateforme en ligne sera éventuellement disponible pour simplifier la prise de
-              rendez-vous.
-            </p>
-            <p className="w-melissa-musique o-p">
-              En attendant, vous pouvez communiquer avec moi à l'aide de l'adresse courriel
-              suivante:
-            </p>
-            <p className="w-melissa-musique o-p">
-              <b>melinotes@hotmail.com</b>
+              <a className="o-a" href="mailto:melinotes@hotmail.com">
+                melinotes@hotmail.com
+              </a>
             </p>
             <Link to="/todo" feature disabled>
               Bientôt disponible
